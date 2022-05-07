@@ -1,6 +1,7 @@
 <template>
-<div class="task">
-    <h3>{{task.text}}</h3>
+<div :class="[task.reminder ? 'reminder' : '', 'task']" > <!--the class is task, but also, if the task.reminder is true, the class is also "reminder"-->
+    <h3>{{task.text}}
+    <i class="fas fa-times"></i></h3>
     <p>{{task.day}}</p>
 </div>
 </template>
@@ -15,6 +16,12 @@
 </script>
 
 <style>
+.fas {
+    color: black;
+}
+.fas:hover {
+    color: red;
+}
 .task {
     background: #f4f4f4;
     margin: 5px;
