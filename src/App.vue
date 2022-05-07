@@ -1,18 +1,18 @@
 <template>
   <div class="container">
-    <Topsection title="Task Tracker" />
+    <Header title="Task Tracker" />
     <Tasks :tasks="tasks" />
   </div>
 </template>
 
 <script>
-import Topsection from './components/Topsection'
+import Header from './components/Header'
 import Tasks from './components/Tasks'
 
 export default {
   name: 'App',
   components: {
-    Topsection,
+    Header,
     Tasks,
   },
   data() {
