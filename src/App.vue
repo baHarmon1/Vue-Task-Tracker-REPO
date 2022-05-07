@@ -40,12 +40,6 @@ export default {
         day: 'March 3rd at 11:00am',
         reminder: false,
       },
-      {
-        id: 4,
-        text: 'Doctors Appointment',
-        day: 'March 1st at 2:30pm',
-        reminder: true,
-      },
     ]
   }
 }
