@@ -1,15 +1,19 @@
 <template>
   <div class="container">
-    <Header title="Task Tracker" />
+    <Topsection title="Task Tracker" />
+    <Tasks :tasks="tasks" />
   </div>
 </template>
 
 <script>
-import Header from './components/Header'
+import Topsection from './components/Topsection'
+import Tasks from './components/Tasks'
+
 export default {
   name: 'App',
   components: {
-    Header,
+    Topsection,
+    Tasks,
   },
   data() {
     return {
@@ -35,6 +39,12 @@ export default {
         text: 'Food Shopping',
         day: 'March 3rd at 11:00am',
         reminder: false,
+      },
+      {
+        id: 4,
+        text: 'Doctors Appointment',
+        day: 'March 1st at 2:30pm',
+        reminder: true,
       },
     ]
   }
